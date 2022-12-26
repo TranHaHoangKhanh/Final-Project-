@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
 from scipy.stats import itemfreq
-import gpiozero
+from gpiozero import Robot
 from time import sleep
 
-robot = gpiozero.Robot(left=(17,18), right=(27,22))
+robot = Robot(left=(17,18), right=(27,22))
 forward_speed = 0.3
 turn_speed = 0.5
 
