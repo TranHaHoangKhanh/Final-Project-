@@ -2,10 +2,10 @@ from picamera import PiCamera
 import curses
 from gpiozero import Robot
 
-robot = Robot(left = (27, 17), right = (22,23))
+robot = Robot(left = (27, 22), right = (17, 18))
 camera = PiCamera()
-camera.resolution = (640, 480)
-camera.rotation = 180
+camera.resolution = (100, 120)
+camera.rotation = 0
 camera.start_preview()
 
 actions = {
